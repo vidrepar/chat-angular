@@ -1,0 +1,6 @@
+<div class="main-bottom">
+    <div class="message-container" ng-keyup="onKeyUp($event)" ng-repeat="message in messages">
+        {{ message.content }}
+    </div>
+    <input type="text" ng-model="message.content" class="message-input" ng-keyup="onKeyUp($event)">
+</div>
